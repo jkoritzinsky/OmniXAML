@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Glass.Core</id>
+    <version>$version$</version>
+    <authors>SuperJMN</authors>
+    <owners>SuperJMN</owners>
+    <projectUrl>https://github.com/SuperJMN/OmniXAML</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>OmniXAML</description>
+    <releaseNotes>This is Street Fighter Alpha 3</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>XAML</tags>
+    <dependencies>
+      <dependency id="NETStandard.Library" version="1.6.1" />
+    </dependencies>
+  </metadata>
+</package>
