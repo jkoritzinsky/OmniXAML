@@ -1,4 +1,5 @@
 ﻿{
+	"version": "2.0.0-*",
 	"description": "The freakin' awesome Cross-platform XAML framework.",
 	"authors": ["José Manuel Nieto (@SuperJMN)"],
 	"supports": {},
