@@ -49,16 +49,6 @@
     <Compile Include="XmlnsDefinitionAttribute.cs" />
     <Compile Include="XmlnsPrefixAttribute.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Glass.Core\Glass.Core.csproj">
-      <Project>{4aefcfcf-5514-44b1-acef-93d40528a0bc}</Project>
-      <Name>Glass.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OmniXaml\OmniXaml.csproj">
-      <Project>{84AE3F65-B4DC-43E0-B2D0-DF0B188E8602}</Project>
-      <Name>OmniXaml</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

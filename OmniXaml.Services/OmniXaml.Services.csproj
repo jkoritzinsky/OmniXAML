@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Glass.Core\Glass.Core.csproj">
-      <Project>{4AEFCFCF-5514-44B1-ACEF-93D40528A0BC}</Project>
+      <Project>{4aefcfcf-5514-44b1-acef-93d40528a0bc}</Project>
       <Name>Glass.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\OmniXaml.Attributes\OmniXaml.Attributes.csproj">

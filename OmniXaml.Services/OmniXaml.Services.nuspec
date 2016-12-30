@@ -13,6 +13,8 @@
     <tags>XAML</tags>
     <dependencies>
       <dependency id="NETStandard.Library" version="1.6.1" />
+      <dependency id="Glass.Core" version="$version$" />
+      <dependency id="OmniXaml" version="$version$" />
     </dependencies>
   </metadata>
 </package>
