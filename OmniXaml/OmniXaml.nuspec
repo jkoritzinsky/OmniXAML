@@ -12,7 +12,11 @@
     <copyright>Copyright 2016</copyright>
     <tags>XAML</tags>
     <dependencies>
-      <dependency id="Glass.Core" version="1.0" />
+      <dependency id="NETStandard.Library" version="1.6.1" />
+      <dependency id="Serilog" version="2.3.0" />
+      <dependency id="Sprache" version="2.1.0" />
+      <dependency id="System.ComponentModel.TypeConverter" version="4.3.0" />
+      <dependency id="Glass.Core" version="$version$" />
     </dependencies>
   </metadata>
 </package>
