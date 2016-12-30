@@ -1,9 +1,7 @@
 version: 2.0.0.{build}
 
 install:
-    - rd /s /q C:\Tools\nuget
-    - md C:\Tools\nuget
-    - ps: (New-Object Net.WebClient).DownloadFile('https://dist.nuget.org/win-x86-commandline/latest/nuget.exe', 'C:\Tools\nuget\nuget.exe')
+  appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
 
 assembly_info:
   patch: true
