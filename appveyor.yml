@@ -10,6 +10,6 @@ build:
   verbosity: minimal
 
 after_build:
-- ps : .\Create-NugetPackages.ps1 -Version 2.0.0.{build}
+- ps : .\Create-NugetPackages.ps1 -Version 2.0.0.%APPVEYOR_BUILD_NUMBER%
 - ps: Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 
