@@ -1,4 +1,6 @@
 ﻿{
+	"authors": ["José Manuel Nieto (@SuperJMN)"],
+	"description": "Glass support library",
 	"version": "2.0.0-*",
 	"supports": {},
 	"dependencies": {
@@ -9,6 +11,7 @@
 		"netstandard1.2": {}
 	},
 	"packOptions": {
+		"authors": ["José Manuel Nieto (@SuperJMN)"],
 		"description": "The freakin' awesome Cross-platform XAML framework.",
 		"tags": ["XAML", "MVVM", "GUI", "UI", "Avalonia", "AvaloniaUI", "WPF"],
 		"iconUrl": "http://i62.tinypic.com/17pcwi.png",
