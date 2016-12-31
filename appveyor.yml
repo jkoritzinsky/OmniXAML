@@ -6,6 +6,10 @@ install:
 before_build:
 - cmd: nuget restore
 
+build:
+  verbosity: minimal
+
 after_build:
 - ps : .\Create-NugetPackages.ps1
 - ps: Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
+
