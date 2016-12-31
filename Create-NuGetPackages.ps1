@@ -1,8 +1,14 @@
 [CmdletBinding()]
 Param(
-	[Parameter(Mandatory=$True)]
-	[string]$version	
+	[Parameter(Mandatory=$True, Position=1)]
+	[string]$Version	
 )
+
+function CreatePackage($file, $version)
+{
+    Write-Host 'Building package inside ' $file.DirectoryName
+    & 'nuget.exe' 'pack' $file.FullName -Version $version
+}
 
 $csprojs = Get-ChildItem -Filter "*.csproj" -Recurse
 
@@ -20,8 +26,3 @@ foreach ($proj in $csprojs)
     }
 }
 
-function CreatePackage($file, $version)
-{
-    Write-Host 'Building package inside ' $file.DirectoryName
-    & 'nuget.exe' 'pack' $file.FullName -Version $version
-}
