@@ -10,6 +10,6 @@ build:
   verbosity: minimal
 
 after_build:
-- ps : .\Create-NugetPackages.ps1 -Version {version}
+- ps : .\Create-NugetPackages.ps1 -Version $env:appveyor_build_version
 - ps: Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 
