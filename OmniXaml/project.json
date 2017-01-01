@@ -4,7 +4,7 @@
 	"authors": ["José Manuel Nieto (@SuperJMN)"],
 	"supports": {},
 	"dependencies": {
-		"Glass.Core": "2.0.0-*",
+		"Glass.Core": "2.0.0.*",
 		"Microsoft.NETCore.Portable.Compatibility": "1.0.1",
 		"NETStandard.Library": "1.6.1",
 		"Serilog": "2.3.0",
