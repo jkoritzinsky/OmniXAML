@@ -8,6 +8,10 @@ before_build:
 
 build:
   verbosity: minimal
+  
+nuget:
+  account_feed: true
+  project_feed: true
 
 after_build:
 - ps : .\Create-NugetPackages.ps1 -Version $env:appveyor_build_version
