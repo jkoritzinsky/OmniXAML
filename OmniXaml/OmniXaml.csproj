@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.2</TargetFramework>
     <PackageId>OmniXaml</PackageId>
-    <PackageVersion>2.0.1</PackageVersion>
+    <PackageVersion>2.0.0</PackageVersion>
     <Authors>José Manuel Nieto (@SuperJMN)</Authors>
     <Description>The Cross-platform XAML Framework</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
