@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="Model\AttachedEventArgs.cs" />
     <Compile Include="Model\Button.cs" />
+    <Compile Include="Model\ContentControl.cs" />
     <Compile Include="Model\Custom\CustomWindow.cs" />
     <Compile Include="Model\TextWrapping.cs" />
     <Compile Include="Namespaces\PrefixAnnotatorTests.cs" />

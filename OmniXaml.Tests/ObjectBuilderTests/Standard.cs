@@ -176,5 +176,37 @@ namespace OmniXaml.Tests.ObjectBuilderTests
 
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ChildrenAssociatedBeforeInflated()
+        {
+            var tree = new ConstructionNode<ContentControl>
+            {
+                Assignments = new[]
+                {
+                    new MemberAssignment
+                    {
+                        Member = Member.FromStandard<ContentControl>(ctrl => ctrl.Content),
+                        Children = new[]
+                        {
+                            new ConstructionNode<ModelObject>
+                            {
+                                Assignments = new[]
+                                {
+                                    new MemberAssignment
+                                    {
+                                        SourceValue = "TestName",
+                                        Member = Member.FromStandard<ModelObject>(obj => obj.Name)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            var actual = (ContentControl)Create(tree).Result;
+            
+            Assert.True(actual.ContentAssociatedBeforeAssignment);
+        }
     }
 }
